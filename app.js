@@ -7,7 +7,7 @@ db.serialize(function () {
     console.log('Categories');
     console.log("==========");
   });
-});
+
 
   db.each('SELECT * FROM Categories', function (err, row) {
     console.log(row.Description.toString());
@@ -44,7 +44,7 @@ db.serialize(function () {
 
   db.run('DROP TABLE CategoryFavorites');
 
-  db.run('CREATE TABLE CategoryFavorites ([FavoriteID] INTEGER NOT NULL PRIMARY KEY AUTOINCREMENT, [CategoryID] INTEGER NOT NULL');
+  db.run('CREATE TABLE CategoryFavorites ([FavoriteID] INTEGER NOT NULL PRIMARY KEY AUTOINCREMENT, [CategoryID] INTEGER NOT NULL)');
 
   for (var i = 2; i <= 8; i+=2) {
   	db.run('INSERT INTO CategoryFavorites (categoryID) VALUES (' + i + ')');
@@ -81,7 +81,7 @@ db.serialize(function () {
   });
 
   db.close();
-
+});
 
 
 
