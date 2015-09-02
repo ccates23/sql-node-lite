@@ -17,6 +17,6 @@
   },
   "homepage": "https://github.com/ccates23/sql-node-lite#readme",
   "dependencies": {
-    "sqlite3": "^3.0.10"
+    "pg": "^4.4.1"
   }
 }
