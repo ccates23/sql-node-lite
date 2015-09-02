@@ -1,0 +1,22 @@
+{
+  "name": "sql-node-lite",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ccates23/sql-node-lite.git"
+  },
+  "author": "Chad Cates <cates.chad@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/ccates23/sql-node-lite/issues"
+  },
+  "homepage": "https://github.com/ccates23/sql-node-lite#readme",
+  "dependencies": {
+    "sqlite3": "^3.0.10"
+  }
+}
